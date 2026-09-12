@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div align="center">
 
 <picture>
@@ -126,17 +126,5 @@ tdk status         -> running topology and health
 <div align="center">
   <strong>Declare the landscape. Generate the boring parts. Keep the stack close enough to understand.</strong>
 </div>
-=======
-## Hi there 👋
 
-<!--
 
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
->>>>>>> 08563868ea1833aeec79a9c0013f692e996be6a5
