@@ -133,7 +133,7 @@ The TDK Landscape isn't just one tool—it's a complete ecosystem for modern mic
       <p>GitHub Pages deployment setup and workflow configuration for TDK ecosystem projects.</p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/tdk-landscape/tdk-cli-releases-public">tdk-cli-releases-public</a></h3>
+      <h3><a href="https://github.com/tdk-landscape/tdk-cli-releases">tdk-cli-releases</a></h3>
       <p>Public release artifacts and version management for TDK CLI distributions.</p>
     </td>
   </tr>
