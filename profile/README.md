@@ -22,6 +22,8 @@ One CLI that scaffolds your services and runs the whole landscape locally (APIs,
 <p>
   <a href="https://tdk-landscape.github.io/tdk-website/"><strong>Website</strong></a>
   &nbsp;·&nbsp;
+  <a href="https://github.com/tdk-landscape/awesome-tdk-framework"><strong>Awesome TDK</strong></a>
+  &nbsp;·&nbsp;
   <a href="https://tdk-landscape.github.io/tdk-website/docs/quickstart/"><strong>Quickstart</strong></a>
   &nbsp;·&nbsp;
   <a href="https://tdk-landscape.github.io/tdk-website/docs/examples/"><strong>Examples</strong></a>
