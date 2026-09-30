@@ -2,14 +2,22 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0A0A0E,45:34244F,100:EE924E&text=TDK&fontColor=F7EFE2&fontSize=72&fontAlignY=35&desc=Run%20100%20microservices%20on%20a%2016%20GB%20laptop.%20No%20Kubernetes.&descAlignY=58&descSize=18">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:F7EFE2,45:D8D0FF,100:EE924E&text=TDK&fontColor=0A0A0E&fontSize=72&fontAlignY=35&desc=Run%20100%20microservices%20on%20a%2016%20GB%20laptop.%20No%20Kubernetes.&descAlignY=58&descSize=18" alt="TDK. Run 100 microservices on a 16 GB laptop. No Kubernetes." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0A0A0E,45:34244F,100:EE924E&text=TDK&fontColor=F7EFE2&fontSize=72&fontAlignY=35&desc=Local%20development%20on%20your%20laptop.%20Not%20Helm.&descAlignY=58&descSize=18">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:F7EFE2,45:D8D0FF,100:EE924E&text=TDK&fontColor=0A0A0E&fontSize=72&fontAlignY=35&desc=Local%20development%20on%20your%20laptop.%20Not%20Helm.&descAlignY=58&descSize=18" alt="TDK. Local development on your laptop. Not Helm." width="100%">
 </picture>
 
 <h3>Build the service, not the setup.</h3>
 
 <p>
-One CLI that scaffolds your services and runs the whole landscape locally (APIs, frontends, workers, Postgres, NATS, proxy) with hot reload and health checks. Built on <a href="https://tilt.dev">Tilt</a>.
+TDK is a local development kit. It scaffolds services and runs a stack on your laptop with Docker and <a href="https://tilt.dev">Tilt</a> (hot reload, health, Traefik, Postgres).
+</p>
+
+<p>
+It is not a Kubernetes packager. It does not replace Helm, Argo CD, Kustomize, or your production charts.
+</p>
+
+<p>
+Use TDK when local bring-up of many services is painful and you do not want a cluster on the laptop. Skip TDK if <code>helm install</code> (or your existing compose/Tilt/Skaffold) already gives you a working local or shared-dev environment.
 </p>
 
 <p>
@@ -57,7 +65,7 @@ tdk up shop                                            # run it with hot reload
 | Needs a cluster | No | Yes | Optional | **No** |
 | Start one stack of a large system | ⚠️ | ⚠️ | ⚠️ | ✅ `tdk up <stack>` |
 
-**Measured:** 100 services, all healthy in 112 s, 1.6 GiB total memory, 0 OOM kills on a 16 GB machine. [See the benchmark →](https://github.com/tdk-landscape/tdk-cli-core#benchmark-100-services-on-one-laptop)
+<p><small>Fixture benchmark only: 100 generated services, all healthy in 112 s, 1.6 GiB total memory, 0 OOM kills on a 16 GB machine. This is a scale fixture, not the TDK product example. <a href="https://github.com/tdk-landscape/tdk-cli-core#fixture-bench-100-generated-services-on-one-laptop">See the benchmark →</a></small></p>
 
 ## Repositories
 
@@ -68,7 +76,7 @@ tdk up shop                                            # run it with hot reload
 | [tdk-saas-starter](https://github.com/tdk-landscape/tdk-saas-starter) | SaaS account dashboard with a working checkout button |
 | [tdk-restaurant-example](https://github.com/tdk-landscape/tdk-restaurant-example) | Reservations, kitchen pacing, menu availability, floor control |
 | [tdk-user-management](https://github.com/tdk-landscape/tdk-user-management) | Identity demo: admin, portal, and compliance stacks (SCIM, OIDC, audit) |
-| [tdk-erp-system](https://github.com/tdk-landscape/tdk-erp-system) | 100-service ERP across 7 domains, used for the laptop benchmark |
+| [tdk-erp-system](https://github.com/tdk-landscape/tdk-erp-system) | Generated service-scale fixture used for laptop benchmarks |
 | [tdk-docker-compose-example](https://github.com/tdk-landscape/tdk-docker-compose-example) | Run the TDK CLI from Docker Compose without installing it |
 | [create-tdk-stack](https://github.com/tdk-landscape/create-tdk-stack) | create-t3-app–style landing page for the TDK stack |
 | [tdk-cli-releases](https://github.com/tdk-landscape/tdk-cli-releases) | Prebuilt binaries for Linux and macOS |
