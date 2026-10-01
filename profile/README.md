@@ -6,14 +6,14 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:F7EFE2,45:D8D0FF,100:EE924E&text=TDK&fontColor=0A0A0E&fontSize=72&fontAlignY=35&desc=Local%20development%20on%20your%20laptop.%20Not%20Helm.&descAlignY=58&descSize=18" alt="TDK. Local development on your laptop. Not Helm." width="100%">
 </picture>
 
-<h3>Build the service, not the setup.</h3>
+<h3>Start your services on your laptop.</h3>
 
 <p>
-TDK is a local development kit. It scaffolds services and runs a stack on your laptop with Docker and <a href="https://tilt.dev">Tilt</a> (hot reload, health, Traefik, Postgres).
+TDK CLI starts services on your laptop. It is not a deploy and not a Compose file: define each service in <code>service.json</code>, then run <code>tdk up</code>. No Kubernetes is needed on the machine.
 </p>
 
 <p>
-It is not a Kubernetes packager. It does not replace Helm, Argo CD, Kustomize, or your production charts.
+Docker runs the containers. Tilt runs the dev loop. TDK CLI writes that config. Helm still deploys the cluster.
 </p>
 
 <p>
@@ -52,7 +52,7 @@ tdk resource orders-api --type backend --stack shop    # scaffold a service
 tdk up shop                                            # run it with hot reload
 ```
 
-⭐ **If TDK saves you from writing another `docker-compose.yml`, [star tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core).** Stars help other developers find it.
+⭐ **If TDK CLI helps you start your local services, [star tdk-cli-core](https://github.com/tdk-landscape/tdk-cli-core).** Stars help other developers find it.
 
 ## Why TDK
 
@@ -65,13 +65,13 @@ tdk up shop                                            # run it with hot reload
 | Needs a cluster | No | Yes | Optional | **No** |
 | Start one stack of a large system | ⚠️ | ⚠️ | ⚠️ | ✅ `tdk up <stack>` |
 
-<p><small>Fixture benchmark only: 100 generated services, all healthy in 112 s, 1.6 GiB total memory, 0 OOM kills on a 16 GB machine. This is a scale fixture, not the TDK product example. <a href="https://github.com/tdk-landscape/tdk-cli-core#fixture-bench-100-generated-services-on-one-laptop">See the benchmark →</a></small></p>
+<p><small>Fixture benchmark only: a generated <code>/health</code> fixture with 100 services, all healthy in 112 s, 1.6 GiB total memory, 0 OOM kills on a 16 GB machine. This is a scale fixture, not the TDK CLI product example. <a href="https://github.com/tdk-landscape/tdk-cli-core#fixture-bench-100-generated-services-on-one-laptop">See the benchmark →</a></small></p>
 
 ## Repositories
 
 | Repo | What it is |
 | --- | --- |
-| ⭐ [**tdk-cli-core**](https://github.com/tdk-landscape/tdk-cli-core) | **The TDK CLI, Tilt engine, and service discovery. Start here.** |
+| ⭐ [**tdk-cli-core**](https://github.com/tdk-landscape/tdk-cli-core) | **TDK CLI starts services on your laptop. Start here.** |
 | [tdk-example](https://github.com/tdk-landscape/tdk-example) | Smallest useful example: 2 stacks, 4 services, one `service.json` each |
 | [tdk-saas-starter](https://github.com/tdk-landscape/tdk-saas-starter) | SaaS account dashboard with a working checkout button |
 | [tdk-restaurant-example](https://github.com/tdk-landscape/tdk-restaurant-example) | Reservations, kitchen pacing, menu availability, floor control |
