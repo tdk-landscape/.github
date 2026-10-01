@@ -65,7 +65,7 @@ tdk up shop                                            # run it with hot reload
 | Needs a cluster | No | Yes | Optional | **No** |
 | Start one stack of a large system | ⚠️ | ⚠️ | ⚠️ | ✅ `tdk up <stack>` |
 
-<p><small>Fixture benchmark only: a generated <code>/health</code> fixture with 100 services, all healthy in 112 s, 1.6 GiB total memory, 0 OOM kills on a 16 GB machine. This is a scale fixture, not the TDK CLI product example. <a href="https://github.com/tdk-landscape/tdk-cli-core#fixture-bench-100-generated-services-on-one-laptop">See the benchmark →</a></small></p>
+<p><small>Fixture benchmark only: a generated <code>/health</code> fixture with 100 services, all healthy in 112 s, 1.6 GiB total memory, 0 OOM kills on a 16 GB machine. This is a scale fixture, not the TDK CLI product example. <a href="https://github.com/tdk-landscape/tdk-cli-core/blob/main/docs/scale-bench.md">See the benchmark →</a></small></p>
 
 ## Repositories
 
